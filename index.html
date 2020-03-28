@@ -41,7 +41,7 @@
         painting = true;
         last = [e.clientX, e.clientY];
       };
-      canvas.onmousemove = Ue => {
+      canvas.onmousemove = e => {
         if (painting === true) {
           drawline(last[0], last[1], e.clientX, e.clientY);
           last = [e.clientX, e.clientY];
